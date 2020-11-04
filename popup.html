@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 30px;
+            height: 17px;
+        }
+
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 13px;
+            width: 13px;
+            left: 2px;
+            bottom: 2px;
+            background-color: white;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+
+        input:checked + .slider {
+            background-color: #2196F3;
+        }
+
+        input:focus + .slider {
+            box-shadow: 0 0 1px #2196F3;
+        }
+
+        input:checked + .slider:before {
+            -webkit-transform: translateX(13px);
+            -ms-transform: translateX(13px);
+            transform: translateX(13px);
+        }
+
+        /* Rounded sliders */
+        .slider.round {
+            border-radius: 17px;
+        }
+
+        .slider.round:before {
+            border-radius: 50%;
+        }
+
+        #dictionControl {
+            width: 12rem;
+            font-family: Arial, sans-serif;
+            padding: 1rem;
+        }
+
+        #dictionControl h1 {
+            margin: 0;;
+        }
+
+        #dictionControl hr {
+            border-color: black;
+            background-color: black;
+        }
+
+        #dictionControl .option {
+            display: flex;
+            align-items: center;
+        }
+
+        #dictionControl .formControl {
+            margin-left: 12px;
+        }
+
+        #dictionControl .title {
+            display: flex;
+        }
+
+        #dictionControl img {
+            height: 2em;
+            width: 2em;
+            margin-right: 8px;
+        }
+
+        .fade-in {
+            opacity: 1;
+            animation-name: fadeInOpacity;
+            animation-iteration-count: 1;
+            animation-timing-function: ease-in;
+            animation-duration: 1s;
+        }
+
+        @keyframes fadeInOpacity {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+<div id="dictionControl">
+    <div class="title">
+        <img src="images/icon48.png" alt="logo">
+        <h1>Diction</h1>
+    </div>
+    <hr>
+    <div class="option fade-in">
+        <h3>Enable Diction: </h3>
+        <label class="switch formControl">
+            <input id="dictionEnabled" type="checkbox" checked>
+            <span class="slider round"></span>
+        </label>
+    </div>
+    <div class="option fade-in">
+        <h3>Anchor: </h3>
+        <label>
+            <select id="dictionAnchor" class="formControl" name="anchor">
+                <option value="tr">Top Right</option>
+                <option value="tl">Top Left</option>
+                <option value="br">Bottom Right</option>
+                <option value="bl">Bottom Left</option>
+            </select>
+        </label>
+    </div>
+</div>
+<script src="popup.js"></script>
+</body>
+</html>

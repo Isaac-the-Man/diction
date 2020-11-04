@@ -1,0 +1,181 @@
+.tr {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+}
+.tl {
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+}
+.br {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+}
+.bl {
+    position: fixed;
+    bottom: 1rem;
+    left: 1rem;
+}
+.dictionNotification {
+    z-index: 10000;
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    max-width: 18rem;
+    max-height: 36rem;
+    font-family: Arial, sans-serif;
+    overflow-y: auto;
+}
+
+.dictionNotification hr {
+    display: block;
+    margin: 0.5em auto;
+    border-style: inset;
+    border-width: 1px;
+    border-color: white;
+    background-color: white;
+}
+
+.dictionNotification ol {
+    display: block;
+    list-style-type: decimal;
+    margin: 0;
+    padding-left: 1em;
+    color: white;
+}
+
+.dictionNotification li {
+    margin-bottom: 8px;
+}
+
+.dictionNotification li:last-child {
+    margin-bottom: 0;
+}
+
+.dictionNotification .ex {
+    color: white;
+    font-style: italic;
+}
+
+.dictionNotification h4 {
+    display: block;
+    margin: 0.67em 0;
+    font-weight: bold;
+    color: white;
+}
+
+.dictionNotification .type {
+    color: white;
+    font-style: oblique;
+    margin-top: 1em;
+    margin-bottom: 0.67em;
+}
+
+.fade-in {
+    animation: fadeIn ease 0.5s;
+    -webkit-animation: fadeIn ease 0.5s;
+    -moz-animation: fadeIn ease 0.5s;
+    -o-animation: fadeIn ease 0.5s;
+    -ms-animation: fadeIn ease 0.5s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.fade-out {
+    animation: fadeOut ease 0.5s;
+    -webkit-animation: fadeOut ease 0.5s;
+    -moz-animation: fadeOut ease 0.5s;
+    -o-animation: fadeOut ease 0.5s;
+    -ms-animation: fadeOut ease 0.5s;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@-o-keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@-ms-keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
