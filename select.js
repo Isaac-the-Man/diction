@@ -35,6 +35,8 @@ async function pushDict(word) {
         console.log('could not fetch dictionary...');
         isError = true;
     }
+    let parent = document.createElement('div');
+    parent.classList.add('reset-parent');
     let div = document.createElement('div');
     if (data) { // definition found
         // dictionary title
@@ -80,8 +82,9 @@ async function pushDict(word) {
     }
     // append to body
     div.classList.add('dictionNotification', 'fade-in');
+    parent.appendChild(div);
     hideOnClickOutside(div);
-    return div;
+    return parent;
 }
 
 function wordCount(word) {

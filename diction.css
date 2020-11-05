@@ -1,31 +1,40 @@
+.reset-parent {
+    all: initial;
+    font-size: 16px;
+}
+
 .tr {
     position: fixed;
-    top: 1rem;
-    right: 1rem;
+    top: 1em;
+    right: 1em;
 }
+
 .tl {
     position: fixed;
-    top: 1rem;
-    left: 1rem;
+    top: 1em;
+    left: 1em;
 }
+
 .br {
     position: fixed;
-    bottom: 1rem;
-    right: 1rem;
+    bottom: 1em;
+    right: 1em;
 }
+
 .bl {
     position: fixed;
-    bottom: 1rem;
-    left: 1rem;
+    bottom: 1em;
+    left: 1em;
 }
+
 .dictionNotification {
     z-index: 10000;
     background-color: black;
     color: white;
-    padding: 1rem;
+    padding: 1em;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    max-width: 18rem;
-    max-height: 36rem;
+    max-width: 18em;
+    max-height: 36em;
     font-family: Arial, sans-serif;
     overflow-y: auto;
 }
@@ -44,11 +53,13 @@
     list-style-type: decimal;
     margin: 0;
     padding-left: 1em;
-    color: white;
+    color: inherit;
+    background-color: inherit;
 }
 
 .dictionNotification li {
     margin-bottom: 8px;
+    font-size: smaller;
 }
 
 .dictionNotification li:last-child {
@@ -56,20 +67,28 @@
 }
 
 .dictionNotification .ex {
-    color: white;
+    color: inherit;
     font-style: italic;
+    background-color: inherit;
 }
 
 .dictionNotification h4 {
     display: block;
     margin: 0.67em 0;
     font-weight: bold;
-    color: white;
+    color: inherit;
+    background-color: inherit;
+}
+
+.dictionNotification small {
+    font-size: smaller;
 }
 
 .dictionNotification .type {
-    color: white;
+    color: inherit;
+    background-color: inherit;
     font-style: oblique;
+    font-size: 0.75em;
     margin-top: 1em;
     margin-bottom: 0.67em;
 }

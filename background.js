@@ -7,7 +7,7 @@
 chrome.runtime.onInstalled.addListener(function () {
     chrome.storage.sync.set({
         isEnabled: true,
-        anchor: 'tr'
+        anchor: 'br'
     }, function () {
         console.log("Diction Initialized.");
     });
