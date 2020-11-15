@@ -1,7 +1,7 @@
 {
   "name": "Diction",
   "version": "1.0",
-  "description": "Dictionary with examples",
+  "description": "Instant online dictionary with examples.",
   "author": "Yu-Kai Wang",
   "permissions": [
     "activeTab",

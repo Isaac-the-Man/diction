@@ -154,6 +154,3 @@ chrome.storage.onChanged.addListener(function (changes) {
         }
     }
 });
-
-
-console.log("content script injected !");
