@@ -4,7 +4,6 @@
   "description": "Instant online dictionary with examples.",
   "author": "Yu-Kai Wang",
   "permissions": [
-    "activeTab",
     "storage"
   ],
   "background": {
