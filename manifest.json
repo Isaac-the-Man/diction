@@ -1,19 +1,16 @@
 {
   "name": "Diction",
-  "version": "1.0",
+  "version": "1.0.2",
   "description": "Instant online dictionary with examples.",
   "author": "Yu-Kai Wang",
   "permissions": [
     "storage"
   ],
   "background": {
-    "scripts": [
-      "background.js"
-    ],
-    "persistent": false
+    "service_worker": "background.js"
   },
   "options_page": "popup.html",
-  "browser_action": {
+  "action": {
     "default_title": "Diction",
     "default_popup": "popup.html",
     "default_icon": {
@@ -36,5 +33,5 @@
     "48": "images/icon48.png",
     "128": "images/icon128.png"
   },
-  "manifest_version": 2
+  "manifest_version": 3
 }
