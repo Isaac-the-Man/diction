@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Diction",
-  "version": "1.0.2",
+  "version": "1.1.2",
   "description": "Instant online dictionary with examples.",
   "author": "Yu-Kai Wang",
   "permissions": [
