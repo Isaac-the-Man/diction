@@ -1,4 +1,5 @@
 {
+  "manifest_version": 3,
   "name": "Diction",
   "version": "1.0.2",
   "description": "Instant online dictionary with examples.",
@@ -32,6 +33,5 @@
     "32": "images/icon32.png",
     "48": "images/icon48.png",
     "128": "images/icon128.png"
-  },
-  "manifest_version": 3
+  }
 }
