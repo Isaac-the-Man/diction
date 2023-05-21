@@ -1,33 +1,33 @@
-.reset-parent {
+.diction-reset-parent {
     all: initial;
     font-size: 16px;
 }
 
-.tr {
+.diction-tr {
     position: fixed;
     top: 1em;
     right: 1em;
 }
 
-.tl {
+.diction-tl {
     position: fixed;
     top: 1em;
     left: 1em;
 }
 
-.br {
+.diction-br {
     position: fixed;
     bottom: 1em;
     right: 1em;
 }
 
-.bl {
+.diction-bl {
     position: fixed;
     bottom: 1em;
     left: 1em;
 }
 
-.dictionNotification {
+.diction-notification {
     z-index: 10000;
     background-color: black;
     color: white;
@@ -39,7 +39,7 @@
     overflow-y: auto;
 }
 
-.dictionNotification hr {
+.diction-notification hr {
     display: block;
     margin: 0.5em auto;
     border-style: inset;
@@ -48,7 +48,7 @@
     background-color: white;
 }
 
-.dictionNotification ol {
+.diction-notification ol {
     display: block;
     list-style-type: decimal;
     margin: 0;
@@ -57,22 +57,22 @@
     background-color: inherit;
 }
 
-.dictionNotification li {
+.diction-notification li {
     margin-bottom: 8px;
     font-size: smaller;
 }
 
-.dictionNotification li:last-child {
+.diction-notification li:last-child {
     margin-bottom: 0;
 }
 
-.dictionNotification .ex {
+.diction-notification .ex {
     color: inherit;
     font-style: italic;
     background-color: inherit;
 }
 
-.dictionNotification h4 {
+.diction-notification h4 {
     display: block;
     margin: 0.67em 0;
     font-weight: bold;
@@ -80,11 +80,11 @@
     background-color: inherit;
 }
 
-.dictionNotification small {
+.diction-notification small {
     font-size: smaller;
 }
 
-.dictionNotification .type {
+.diction-notification .type {
     color: inherit;
     background-color: inherit;
     font-style: oblique;
@@ -93,7 +93,7 @@
     margin-bottom: 0.67em;
 }
 
-.fade-in {
+.diction-fade-in {
     animation: fadeIn ease 0.5s;
     -webkit-animation: fadeIn ease 0.5s;
     -moz-animation: fadeIn ease 0.5s;
@@ -146,7 +146,7 @@
     }
 }
 
-.fade-out {
+.diction-fade-out {
     animation: fadeOut ease 0.5s;
     -webkit-animation: fadeOut ease 0.5s;
     -moz-animation: fadeOut ease 0.5s;

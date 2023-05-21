@@ -1,6 +1,6 @@
 'use strict';
 
-let control = document.getElementById('dictionEnabled');
+let control = document.getElementById('diction-enabled');
 chrome.storage.sync.get('isEnabled', function (data) {
     control.checked = data.isEnabled;
 });
@@ -12,7 +12,7 @@ control.onchange = function() {
     })
 }
 
-let anchor = document.getElementById('dictionAnchor');
+let anchor = document.getElementById('diction-anchor');
 chrome.storage.sync.get('anchor', function (data) {
     anchor.value = data.anchor;
 });
