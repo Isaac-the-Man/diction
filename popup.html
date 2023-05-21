@@ -3,20 +3,20 @@
 <head>
     <style>
 
-        .switch {
+        .diction-switch {
             position: relative;
             display: inline-block;
             width: 30px;
             height: 17px;
         }
 
-        .switch input {
+        .diction-switch input {
             opacity: 0;
             width: 0;
             height: 0;
         }
 
-        .slider {
+        .diction-slider {
             position: absolute;
             cursor: pointer;
             top: 0;
@@ -28,7 +28,7 @@
             transition: .4s;
         }
 
-        .slider:before {
+        .diction-slider::before {
             position: absolute;
             content: "";
             height: 13px;
@@ -40,58 +40,58 @@
             transition: .4s;
         }
 
-        input:checked + .slider {
+        .diction-input:checked + .diction-slider {
             background-color: #2196F3;
         }
 
-        input:focus + .slider {
+        .diction-input:focus + .diction-slider {
             box-shadow: 0 0 1px #2196F3;
         }
 
-        input:checked + .slider:before {
+        .diction-input:checked + .diction-slider::before {
             -webkit-transform: translateX(13px);
             -ms-transform: translateX(13px);
             transform: translateX(13px);
         }
 
-        /* Rounded sliders */
-        .slider.round {
+        /* Rounded diction-sliders */
+        .diction-slider.round {
             border-radius: 17px;
         }
 
-        .slider.round:before {
+        .diction-slider.round::before {
             border-radius: 50%;
         }
 
-        #dictionControl {
+        #diction-control {
             width: 12rem;
             font-family: Arial, sans-serif;
             padding: 1rem;
         }
 
-        #dictionControl h1 {
-            margin: 0;;
+        #diction-control h1 {
+            margin: 0;
         }
 
-        #dictionControl hr {
+        #diction-control hr {
             border-color: black;
             background-color: black;
         }
 
-        #dictionControl .option {
+        #diction-control .option {
             display: flex;
             align-items: center;
         }
 
-        #dictionControl .formControl {
+        #diction-control .formControl {
             margin-left: 12px;
         }
 
-        #dictionControl .title {
+        #diction-control .title {
             display: flex;
         }
 
-        #dictionControl img {
+        #diction-control img {
             height: 2em;
             width: 2em;
             margin-right: 8px;
@@ -116,7 +116,7 @@
     </style>
 </head>
 <body>
-<div id="dictionControl">
+<div id="diction-control">
     <div class="title">
         <img src="images/icon48.png" alt="logo">
         <h1>Diction</h1>
@@ -124,9 +124,9 @@
     <hr>
     <div class="option fade-in">
         <h3>Enable Diction: </h3>
-        <label class="switch formControl">
-            <input id="dictionEnabled" type="checkbox" checked>
-            <span class="slider round"></span>
+        <label class="diction-switch formControl">
+            <input id="dictionEnabled" class="diction-input" type="checkbox" checked>
+            <span class="diction-slider round"></span>
         </label>
     </div>
     <div class="option fade-in">
